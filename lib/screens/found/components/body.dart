@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_list/screens/lost/components/background.dart';
+import 'package:smart_list/screens/found/components/background.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -14,7 +14,7 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "LOST",
+              "FOUND",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             SizedBox(height: size.height * 0.05),

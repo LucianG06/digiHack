@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:smart_list/screens/login/login_screen.dart';
-import 'package:smart_list/screens/signUp/signup_screen.dart';
-import 'package:smart_list/screens/welcome/components/background.dart';
+import 'package:smart_list/screens/lost/lost_screen.dart';
+import 'package:smart_list/screens/found/found_screen.dart';
+import 'package:smart_list/screens/lost_found/components/background.dart';
 import 'package:smart_list/components/rounded_button.dart';
 import 'package:smart_list/constants.dart';
 
@@ -15,39 +15,35 @@ class Body extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              "WELCOME TO FIND YOUR BESTIE",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
             SizedBox(height: size.height * 0.05),
             Image.asset(
-              "assets/images/welcome_img.jpeg",
+              "assets/images/cutu_feli.jpeg",
               height: size.height * 0.45,
             ),
             SizedBox(height: size.height * 0.05),
             RoundedButton(
-              text: "LOGIN",
+              text: "PIERDUT",
               press: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return LoginScreen();
+                      return LostScreen();
                     },
                   ),
                 );
               },
             ),
             RoundedButton(
-              text: "SIGN UP",
-              color: kPrimaryLightColor,
-              textColor: Colors.black,
+              text: "GASIT",
+              color: kPrimaryColor,
+              textColor: Colors.white,
               press: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return SignUpScreen();
+                      return FoundScreen();
                     },
                   ),
                 );
