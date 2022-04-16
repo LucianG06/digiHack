@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_list/screens/login/components/background.dart';
+import 'package:smart_list/screens/lost_found/lost_found.dart';
 import 'package:smart_list/screens/signUp/signup_screen.dart';
 import 'package:smart_list/components/already_have_an_account_acheck.dart';
 import 'package:smart_list/components/rounded_button.dart';
@@ -39,7 +40,16 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LostFoundScreen();
+                    },
+                  ),
+                );
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
