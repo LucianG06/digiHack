@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.find_your_bestie">
+    package="com.example.smart_list">
    <application
-        android:label="find_your_bestie"
+        android:label="smart_list"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

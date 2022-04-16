@@ -1,4 +1,4 @@
-# find_your_bestie
+# smart_list
 
 A new Flutter project.
 

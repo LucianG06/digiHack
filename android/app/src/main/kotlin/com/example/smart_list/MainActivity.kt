@@ -1,4 +1,4 @@
-package com.example.find_your_bestie
+package com.example.smart_list
 
 import io.flutter.embedding.android.FlutterActivity
 
