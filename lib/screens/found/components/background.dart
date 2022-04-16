@@ -1,11 +1,10 @@
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:smart_list/screens/tinder/tinder_screen.dart';
 
 void main() => runApp(Background());
-
 
 MapType _currentMapType = MapType.normal;
 
@@ -81,21 +80,34 @@ class _MyAppState extends State<Background> {
                 alignment: Alignment.topRight,
                 child: Column(
                   children: <Widget>[
-                  FloatingActionButton(
-                    onPressed: _onMapTypeButtonPressed,
-                    materialTapTargetSize: MaterialTapTargetSize.padded,
-                    backgroundColor: Colors.green,
-                    child: const Icon(Icons.map, size: 36.0),
-                  ),
-                  SizedBox(height: 16.0),
-                  FloatingActionButton(
-                    onPressed: _onAddMarkerButtonPressed,
-                    materialTapTargetSize: MaterialTapTargetSize.padded,
-                    backgroundColor: Colors.green,
-                    child: const Icon(Icons.add_location, size: 36.0),
-                  ),
-                ],
-              ),
+                    FloatingActionButton(
+                      onPressed: _onMapTypeButtonPressed,
+                      materialTapTargetSize: MaterialTapTargetSize.padded,
+                      backgroundColor: Colors.green,
+                      child: const Icon(Icons.map, size: 36.0),
+                    ),
+                    SizedBox(height: 16.0),
+                    FloatingActionButton(
+                      onPressed: _onAddMarkerButtonPressed,
+                      materialTapTargetSize: MaterialTapTargetSize.padded,
+                      backgroundColor: Colors.green,
+                      child: const Icon(Icons.add_location, size: 36.0),
+                    ),
+                    SizedBox(height: 16.0),
+                    FloatingActionButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => TinderScreen(),
+                            ));
+                      },
+                      materialTapTargetSize: MaterialTapTargetSize.padded,
+                      backgroundColor: Colors.green,
+                      child: const Icon(Icons.search, size: 36.0),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
