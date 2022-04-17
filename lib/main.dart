@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:smart_list/constants.dart';
 import 'package:smart_list/screens/welcome/welcome_screen.dart';
+import 'package:http/http.dart' as http;
+
 void main() {
   runApp(MyApp());
 }

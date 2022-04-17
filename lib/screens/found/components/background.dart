@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:smart_list/screens/foundSearch/foundSearch_screen.dart';
-import 'package:smart_list/screens/tinder/tinder_screen.dart';
 
 void main() => runApp(Background());
 
