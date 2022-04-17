@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:smart_list/screens/foundSearch/foundSearch_screen.dart';
 import 'package:smart_list/screens/tinder/tinder_screen.dart';
 
 void main() => runApp(Background());
@@ -45,8 +46,7 @@ class _MyAppState extends State<Background> {
         markerId: MarkerId(_lastMapPosition.toString()),
         position: _lastMapPosition,
         infoWindow: InfoWindow(
-          title: 'Really cool place',
-          snippet: '5 Star Rating',
+          title: 'Locul unde am gasit animalutul',
         ),
         icon: BitmapDescriptor.defaultMarker,
       ));
@@ -99,7 +99,7 @@ class _MyAppState extends State<Background> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => TinderScreen(),
+                              builder: (context) => FoundSearchScreen(),
                             ));
                       },
                       materialTapTargetSize: MaterialTapTargetSize.padded,
