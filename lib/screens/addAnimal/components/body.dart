@@ -1,6 +1,5 @@
-
 import 'package:flutter/material.dart';
-import 'package:smart_list/screens/lost/components/background.dart';
+import 'package:smart_list/screens/addAnimal/components/background.dart';
 
 class Body extends StatelessWidget {
   @override

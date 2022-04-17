@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text('Ce animalut ai pierdut?'),
+        title: Text('Ce animalut ai vazut?'),
       ),
       body: Center(
         child: Column(
@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ),
             RoundedButton(
-              text: "CAUTA",
+              text: "ARATA",
               color: kPrimaryColor,
               textColor: Colors.white,
               press: () {
