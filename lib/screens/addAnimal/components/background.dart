@@ -4,7 +4,6 @@ import 'package:smart_list/screens/addedSuccess/addedSucces_screen.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:intl/intl.dart';
-import 'package:smart_list/screens/photoScreen/photo_screen.dart';
 import '../../../constants.dart';
 
 void main() {
@@ -82,26 +81,21 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _validateDescription = false;
 
   void postAnimal() async {
-    var response = null;
     try {
-      response = await http.post(Uri.parse(_endpointUrl), body:
+      await http.post(Uri.parse(_endpointUrl), body:
       jsonEncode({
-        "userId": "maidanez",
-        "type": "shufdgbafhug",
+        "userId": "1",
+        "type": "caine",
         "race": "maidanez",
-        "latitude": "maidanez",
-        "longitude": "maidanez",
-        "datatime": "1234",
+        "latitude": 43.2442,
+        "longitude": 15.1321,
+        "datatime": DateFormat('kk:mm:ss \n EEE d MMM').format(now),
         "description": "dnvduhfvbdfhu"
       }));
     } catch(e) {
       print('Eroare!!!!!!!!!!');
       print(e);
     }
-
-
-    print('Mesaj eroare');
-    print(response);
   }
 
   @override
