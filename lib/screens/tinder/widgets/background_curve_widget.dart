@@ -17,8 +17,8 @@ class BackgroudCurveWidget extends StatelessWidget {
         ),
         gradient: LinearGradient(
           colors: <Color>[
-            Color(0xFFFD0E42),
-            Color(0xFFC30F31),
+            Color(0xFFB589D6),
+            Color(0xFF804FB3),
           ],
         ),
       ),
