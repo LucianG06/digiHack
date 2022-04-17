@@ -1,12 +1,61 @@
 import 'package:flutter/material.dart';
 import 'package:smart_list/components/rounded_button.dart';
 import 'package:smart_list/screens/addedSuccess/addedSucces_screen.dart';
-
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+import 'package:intl/intl.dart';
+import 'package:smart_list/screens/photoScreen/photo_screen.dart';
 import '../../../constants.dart';
 
 void main() {
   runApp(Background());
 }
+
+Welcome welcomeFromJson(String str) => Welcome.fromJson(json.decode(str));
+DateTime now = DateTime.now();
+String welcomeToJson(Welcome data) => json.encode(data.toJson());
+
+class Welcome {
+  Welcome({
+    required this.userId,
+    required this.type,
+    required this.race,
+    required this.latitude,
+    required this.longitude,
+    required this.datatime,
+    required this.description,
+  });
+
+  int userId;
+  String type;
+  String race;
+  double latitude;
+  double longitude;
+  String datatime;
+  String description;
+
+  factory Welcome.fromJson(Map<String, dynamic> json) => Welcome(
+    userId: json["userId"],
+    type: json["type"],
+    race: json["race"],
+    latitude: json["latitude"].toDouble(),
+    longitude: json["longitude"].toDouble(),
+    datatime: json["datatime"],
+    description: json["description"],
+  );
+
+  Map<String, dynamic> toJson() => {
+    "userId": userId,
+    "type": type,
+    "race": race,
+    "latitude": latitude,
+    "longitude": longitude,
+    "datatime": datatime,
+    "description": description,
+  };
+}
+
+const String _endpointUrl = 'localhost:8080/addAnimal';
 
 class Background extends StatelessWidget {
   // This widget is the root of your application.
@@ -31,6 +80,18 @@ class _MyHomePageState extends State<MyHomePage> {
   final _description = TextEditingController();
   bool _validateName = false;
   bool _validateDescription = false;
+
+  void postAnimal(String type, String description) async {
+    await http.post(Uri.parse(_endpointUrl), body: {
+      "userId": 1,
+      "type": type,
+      "race": "maidanez",
+      "latitude": 44.123,
+      "longitude": 16.223,
+      "datatime": DateFormat('kk:mm:ss \n EEE d MMM').format(now),
+      "description": description
+    });
+  }
 
   @override
   void initState() {
@@ -102,12 +163,19 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             RoundedButton(
-              text: "ADAUGA",
+              text: "ADAUGA IMAGINE",
+              color: kPrimaryColor,
+              textColor: Colors.white,
+              press: () {},
+            ),
+            RoundedButton(
+              text: "ADAUGA ANIMALUT",
               color: kPrimaryColor,
               textColor: Colors.white,
               press: () {
                 _name.text.isEmpty ? _validateName = true : _validateName = false;
                 _description.text.isEmpty ? _validateDescription = true : _validateDescription = false;
+                postAnimal(typeList[0].name, _description.text);
                 Navigator.push(
                   context,
                   MaterialPageRoute(
