@@ -55,7 +55,7 @@ class Welcome {
   };
 }
 
-const String _endpointUrl = 'localhost:8080/addAnimal';
+const String _endpointUrl = 'https://heroku-boot-digihack.herokuapp.com/addAnimal';
 
 class Background extends StatelessWidget {
   // This widget is the root of your application.
@@ -81,16 +81,27 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _validateName = false;
   bool _validateDescription = false;
 
-  void postAnimal(String type, String description) async {
-    await http.post(Uri.parse(_endpointUrl), body: {
-      "userId": 1,
-      "type": type,
-      "race": "maidanez",
-      "latitude": 44.123,
-      "longitude": 16.223,
-      "datatime": DateFormat('kk:mm:ss \n EEE d MMM').format(now),
-      "description": description
-    });
+  void postAnimal() async {
+    var response = null;
+    try {
+      response = await http.post(Uri.parse(_endpointUrl), body:
+      jsonEncode({
+        "userId": "maidanez",
+        "type": "shufdgbafhug",
+        "race": "maidanez",
+        "latitude": "maidanez",
+        "longitude": "maidanez",
+        "datatime": "1234",
+        "description": "dnvduhfvbdfhu"
+      }));
+    } catch(e) {
+      print('Eroare!!!!!!!!!!');
+      print(e);
+    }
+
+
+    print('Mesaj eroare');
+    print(response);
   }
 
   @override
@@ -172,10 +183,10 @@ class _MyHomePageState extends State<MyHomePage> {
               text: "ADAUGA ANIMALUT",
               color: kPrimaryColor,
               textColor: Colors.white,
-              press: () {
+              press:() {
                 _name.text.isEmpty ? _validateName = true : _validateName = false;
                 _description.text.isEmpty ? _validateDescription = true : _validateDescription = false;
-                postAnimal(typeList[0].name, _description.text);
+                postAnimal();
                 Navigator.push(
                   context,
                   MaterialPageRoute(

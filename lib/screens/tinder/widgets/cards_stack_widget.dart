@@ -16,28 +16,33 @@ class _CardsStackWidgetState extends State<CardsStackWidget>
   List<Profile> draggableItems = [
     const Profile(
         name: 'Lupita',
-        distance: '10 km away',
-        imageAsset: 'assets/images/cutu_feli.jpeg',
+        distance: '3 km away',
+        imageAsset: 'assets/images/1.jpeg',
         description:'Caine bun'),
     const Profile(
         name: 'Rex',
-        distance: '12 km away',
-        imageAsset: 'assets/images/cutu_feli.jpeg',
+        distance: '4 km away',
+        imageAsset: 'assets/images/2.jpeg',
         description:'Caine rau'),
     const Profile(
         name: 'Max',
-        distance: '5 km away',
-        imageAsset: 'assets/images/cutu_feli.jpeg',
+        distance: '2 km away',
+        imageAsset: 'assets/images/3.jpeg',
         description:'Caine ascultator'),
     const Profile(
         name: 'Pluto',
-        distance: '4 km away',
-        imageAsset: 'assets/images/cutu_feli.jpeg',
+        distance: '5 km away',
+        imageAsset: 'assets/images/4.jpeg',
         description:'Caine destept'),
     const Profile(
         name: 'Molda',
-        distance: '2 km away',
-        imageAsset: 'assets/images/cutu_feli.jpeg',
+        distance: '7 km away',
+        imageAsset: 'assets/images/5.jpeg',
+        description:'Caine frumos'),
+    const Profile(
+        name: 'Fram',
+        distance: '4 km away',
+        imageAsset: 'assets/images/6.jpeg',
         description:'Caine frumos'),
   ];
 
