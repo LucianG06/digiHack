@@ -2,18 +2,15 @@
 
 An app that helps you find your lost pet.
 
-### Getting Started
+### How the app looks like
+<p float="left">
+    <img alt="drawing" src="/assets/images/readme_welcome.jpeg" height="300"/>
+    <img alt="drawing" src="/assets/images/readme_vazut.jpeg" height="300"/>  
+    <img alt="drawing" src="/assets/images/readme_harta.jpeg" height="300"/>
+</p>
 
-(<img alt="drawing" src="/assets/images/readme_welcome.jpeg" height="300"/>)
-
-[comment]: <> (<img alt="drawing" src="C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\images\readme_harta.jpeg" height="300"/>)
-
-[comment]: <> (<img alt="drawing" src="C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\images\readme_tinder.jpeg" height="300"/>)
-
-[comment]: <> (<img alt="drawing" src="C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\images\readme_tinder_nu.jpeg" height="300"/>)
-
-[comment]: <> (<video src='C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\video.mp4' height=300></video>)
-
-[comment]: <> (<img alt="drawing" src="C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\images\readme_tinder_da.jpeg" height="300"/>)
-
-
+<p float="left">
+    <img alt="drawing" src="/assets/images/readme_tinder.jpeg" height="300"/>
+    <img alt="drawing" src="/assets/images/readme_tinder_nu.jpeg" height="300"/>
+    <img alt="drawing" src="/assets/images/readme_tinder_da.jpeg" height="300"/>
+</p>
