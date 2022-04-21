@@ -1,16 +1,19 @@
-# smart_list
+# Find your bestie
 
-A new Flutter project.
+An app that helps you find your lost pet.
 
-## Getting Started
+### Getting Started
 
-This project is a starting point for a Flutter application.
+[comment]: <> (<img alt="drawing" src="C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\images\readme_welcome.jpeg" height="300"/>)
 
-A few resources to get you started if this is your first Flutter project:
+[comment]: <> (<img alt="drawing" src="C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\images\readme_harta.jpeg" height="300"/>)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+[comment]: <> (<img alt="drawing" src="C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\images\readme_tinder.jpeg" height="300"/>)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[comment]: <> (<img alt="drawing" src="C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\images\readme_tinder_nu.jpeg" height="300"/>)
+
+[comment]: <> (<video src='C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\video.mp4' height=300></video>)
+
+[comment]: <> (<img alt="drawing" src="C:\Users\lucia\OneDrive\Desktop\aplicatia\smart_list\assets\images\readme_tinder_da.jpeg" height="300"/>)
+
+
